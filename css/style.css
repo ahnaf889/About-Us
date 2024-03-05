@@ -1,0 +1,808 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --nav--color: #1C1E53;
+  --Poppins: 'Poppins', sans-serif;
+  --blue--color: #2405F2;
+  --white--backround--color: #fff;
+  --font--color: #282938;
+  --primary--background--color: #F4F6FC;
+}
+
+/* ==========================================
+                  Commend Css
+============================================= */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+ol, ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+
+img{
+  vertical-align: middle;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,div,ul,ol,img,a{
+  margin: 0;
+  padding: 0;
+}
+
+::selection{
+  color: #ffffff;
+  background: purple;
+}
+
+#container{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* ==========================================
+                  Commend Css
+============================================= */
+/* ==========================================
+                  Nav Bar Design
+============================================= */
+
+#nav__backgorund{
+  background: var(--nav--color);
+  padding: 16px 0;
+}
+
+.nav__head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__right{
+  display: flex;
+}
+
+.navRight__icons{
+  display: flex;
+  padding-right: 48px;
+  align-items: center;
+}
+
+.nav__icon{
+  display: flex;
+  column-gap: 32px;
+}
+
+.navIcon{
+  color: #BBBBCB;
+  font-family: var(--Poppins);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.nav--Icons{
+  color: var(--white--backround--color);
+}
+
+.nav__button{
+  width: 185px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 41px;
+  border: 2px solid #f4f6fc33;
+  color: var(--white--backround--color);
+  font-family: var(--Poppins);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  background: transparent;
+  transition-duration: 0.5s;
+}
+.nav__button:hover{
+  background: #800080;
+  border: 2px solid #ff0000;
+}
+
+/* ==========================================
+                  Nav Bar Design
+============================================= */
+/* ==========================================
+                  About Design
+============================================= */
+
+#about__background{
+  background: var(--white--backround--color);
+}
+
+.about__head{
+  padding: 128px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__aboutUs{
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  padding-top: 24px;
+}
+
+.about__title{
+  width: 503px;
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 74px;
+  padding-bottom: 31px;
+  padding-top: 8px;
+}
+
+.about__about{
+  width: 484px;
+  color: var(--font--color);
+  text-align: justify;
+  font-family: var(--Poppins);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  opacity: 0.7;
+  line-height: 28px;
+}
+
+/* ==========================================
+                  About Design
+============================================= */
+/* ==========================================
+                  About Design
+============================================= */
+
+.goal__background{
+  background: var(--white--backround--color);
+}
+
+.goal__fristPart{
+  background: var(--primary--background--color);
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goalpart__left{
+  padding-left: 80px;
+}
+
+.goalpartLeft__name{
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 4px;
+}
+.goalpartLeft__title{
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  margin-bottom: 16px;
+}
+
+.goalpartLeft__about{
+  width: 515px;
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 0.7;
+}
+
+.goalpart__right{
+  padding-right: 109px;
+}
+
+.goalpartRight__title{
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  margin-top: 28px;
+  margin-bottom: 16px;
+}
+
+.goalpartRight__about{
+  width: 515px;
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 0.7;
+}
+
+.goal__picturePart{
+  margin-bottom: 128px;
+}
+
+.goalPicturepart{
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.goalLastpart{
+  text-align: center;
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  margin-bottom: 48px;
+}
+
+.goalLastpart__head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 128px;
+}
+
+.goalLastpart__position{
+  width: 296px;
+}
+
+.goalLastpart__headpart{
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.goalLastpart__headpart1{
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  background: var(--blue--color);
+  border-radius: 50%;
+}
+
+.goalLastpart__headpart2{
+  width: 224px;
+  height: 2px;
+  border-style: dashed;
+  color: var(--blue--color);
+  opacity: 0.4;
+  margin-left: 24px;
+}
+
+.goalLastpart__title{
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  margin-bottom: 8px;
+}
+
+.goalLastpart__about{
+  width: 272px;
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 0.7;
+}
+
+/* ==========================================
+                  About Design
+============================================= */
+/* ==========================================
+                  About Design
+============================================= */
+
+#share__background{
+  background: #EEF4FA;
+}
+
+.share__head{
+  padding: 128px 0;
+}
+
+.shareHead__frist{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 96px;
+}
+
+.shareheadLeft__misson{
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  padding-top: 54px;
+}
+
+.shareheadLeft__title{
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 56px;
+  margin: 16px 0;
+}
+
+.shareheadLeft__about{
+  width: 623px;
+  opacity: 0.7;
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.shareHead__last{
+  display: flex;
+  justify-content: space-between;
+}
+
+.misson--shareheadLeft{
+  margin-left: -30px;
+}
+
+/* ==========================================
+                  About Design
+============================================= */
+/* ==========================================
+                  Work part Design
+============================================= */
+
+#work__background{
+  background: var(--white--backround--color);
+}
+
+.work__head{
+  padding: 128px 0;
+}
+
+.work__title{
+  text-align: center;
+  width: 630px;
+  margin: 0 auto;
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  margin-bottom: 48px;
+}
+
+.wordHead{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.wordHead__body{
+  width: 405px;
+  height: 316px;
+  flex-shrink: 0;
+  background: var(--primary--background--color);
+  transition-duration: 0.5s;
+}
+
+.wordHead__body:hover{
+  background: #800080;
+}
+
+.body--wordHead{
+  transition-duration: 0.5s;
+}
+
+.body--wordHead:hover{
+  background: #adff2f;
+}
+
+.body__wordlast{
+  transition-duration: 0.5s;
+}
+
+.body__wordlast:hover{
+  background: #ff0000;
+}
+
+.wordHeadBody{
+  margin-top: 50px;
+  padding-left: 48px;
+}
+
+.wordHeadBody__title{
+  margin-top: 26px;
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.wordHeadBody__about{
+  margin-top: 12px;
+  width: 324.079px;
+  opacity: 0.7;
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.work__logopart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.workLogopart__title{
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 56px
+}
+
+.wordlogo__title{
+  opacity: 0.7;
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.workhover__01{
+  transition-duration: 0.4s;
+  border-radius: 41px;
+}
+
+.workhover__01:hover{
+  background: #ff0000;
+}
+
+.workhover__02{
+  transition-duration: 0.4s;
+  border-radius: 41px;
+}
+
+.workhover__02:hover{
+  background: #008000;
+}
+
+.workhover__03{
+  transition-duration: 0.4s;
+  border-radius: 41px;
+}
+
+.workhover__03:hover{
+  background: #800080;
+}
+
+.workhover__04{
+  transition-duration: 0.4s;
+  border-radius: 41px;
+}
+
+.workhover__04:hover{
+  background: #daa520;
+}
+
+.workhover__05{
+  transition-duration: 0.4s;
+  border-radius: 41px;
+}
+
+.workhover__05:hover{
+  background: #0000ff;
+}
+
+/* ==========================================
+                  Work part Design
+============================================= */
+/* ==========================================
+                  Meet part Design
+============================================= */
+
+#meet__backgorund{
+  background: var(--primary--background--color);
+}
+
+.meet__head{
+  padding: 128px 0;
+}
+
+.meet__title{
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+  margin-bottom: 48px;
+}
+
+.meetHead{
+  display: flex;
+  justify-content: space-between;
+}
+
+.meetHead__width{
+  width: 296px;
+  height: 344px;
+  flex-shrink: 0;
+  background: var(--white--backround--color);
+}
+
+.meetwidth--01{
+  transition-duration: 0.5s;
+}
+
+.meetwidth--01:hover{
+  background: #0000ff;
+}
+
+.meetwidth--02{
+  transition-duration: 0.5s;
+}
+
+.meetwidth--02:hover{
+  background: #ff0000;
+}
+
+.meetwidth--03{
+  transition-duration: 0.5s;
+}
+
+.meetwidth--03:hover{
+  background: #800080;
+}
+
+.meetwidth--04{
+  transition-duration: 0.5s;
+}
+
+.meetwidth--04:hover{
+  background: #adff2f;
+}
+
+.meetHeadpicture{
+  margin-top: 48px;
+  position: relative;
+}
+
+.meetHead__picture{
+  padding-left: 64px;
+}
+
+.meethead__icons {
+  position: absolute;
+  top: 120px;
+  left: 109px;
+}
+
+.meeheadIcon{
+  display: flex;
+  column-gap: 7px;
+}
+
+.meetheadIconss{
+  font-size: 20px;
+  color: var(--white--backround--color);
+}
+
+.meetHead__title{
+  margin-top: 30px;
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px; 
+  text-align: center;
+}
+
+.meetHead__about{
+  margin-top: 3px;
+  opacity: 0.7;
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+
+/* ==========================================
+                  Meet part Design
+============================================= */
+/* ==========================================
+               About Last part Design
+============================================= */
+
+#talk__background{
+  background: var(--nav--color);
+}
+
+.talk__head{
+  padding-top: 100px;
+}
+
+.talkHead{
+  display: flex;
+}
+
+.talk__left{
+  width: 50%;
+}
+
+.talk__about{
+  margin-top: 22px;
+  width: 399px;
+  opacity: 0.8;
+  color: var(--white--backround--color);
+  font-family: var(--Poppins);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px
+}
+
+.talkHead__itet{
+  margin-top: 86px;
+  width: 517px;
+  height: 95px;
+  flex-shrink: 0;
+  background: #FCD980;
+  display: flex;
+  transition-duration: 0.4s;
+}
+
+.talkHead__itet:hover{
+  background: #800080;
+}
+
+.talkbg__left{
+  width: 50%;
+}
+
+.talkbgleft__title{
+  margin-top: 18px;
+  padding-left: 37px;
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.talkbgleft__about{
+  margin-top: 1px;
+  padding-left: 37px;
+  color: var(--font--color);
+  opacity: 0.8;
+  font-family: var(--Poppins);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.talkbg__right{
+  width: 50%;
+}
+
+.talkRight__title{
+  margin-top: 17px;
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.talkRight__about{
+  margin-top: 1px;
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 0.8;
+}
+
+.talk__right{
+  width: 50%;
+}
+
+.talktitle__right{
+  color: var(--white--backround--color);
+  font-family: var(--Poppins);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+}
+
+.talkabout__right{
+  color: var(--white--backround--color);
+  font-family: var(--Poppins);
+  width: 399px;
+  opacity: 0.8;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 14px;
+}
+
+.talkicon__right{
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.talkicons__right{
+  color: var(--white--backround--color);
+  font-size: 20px;
+}
+
+.talkLast__aboutpart{
+  background: var(--white--backround--color);
+}
+
+.about__talk{
+  padding: 32px 0;
+  display: flex;
+  align-items: center;
+}
+
+.aboutTalk__gmail{
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  padding-right: 570px;
+}
+
+.aboutTalk__ul{
+  display: flex;
+  column-gap: 32px;
+}
+
+.aboutTalk__bar{
+  color: var(--font--color);
+  font-family: var(--Poppins);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+/* ==========================================
+               About Last part Design
+============================================= */
